@@ -1,0 +1,220 @@
+.appleicone{
+width: 40%
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+#title {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.container-fluid {
+  padding: 3% 15%;
+}
+
+h1 {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 3.5rem;
+   line-height: 1.5;
+   font-weight: bold;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  /* Espaçamento entre Linhas: line-height */
+  line-height: 5rem;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Montserrat";
+  font-weight: bold;
+
+}
+
+p {
+  color: #8f8f8f;
+}
+/* Barra de Navegação */
+
+.navbar {
+/* Preenchimento alinhamento da barra de navegação com o título: 0 e 0 cima baixo esq dir */
+padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+/* Espessura da Fonte */
+  font-weight: bold;
+}
+
+.nav-item {
+ padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+/* Download Buttons */
+
+.download-button {
+  margin: 5% /*Parte superior */ 3% /*dir*/ 5%/*esq*/ 0
+}
+
+/* Imagem do Título
+Definida como tendo 60% da lagura do seu pai (col-lg-6)
+
+z-index: Profundidade, é definido por padrão 0
+Imagem do celular atrás da segunda seção do site:
+- Imagem para trás: z-index:-1;
+- Definir position: position absolute;
+- Seção features no topo da imagem do título
+ position: relative;
+ z-index: 1;
+
+
+*/
+
+.imagemTitulo {
+   width: 60%;
+   transform: rotate(25deg);
+   position: absolute;
+   right:30%;
+}
+
+/* Features Section */
+
+#features {
+  padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.boxSegParte {
+  text-align: center;
+  padding: 5%;
+}
+
+.iconSegPart {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+/* Passar o mouse e alterar de cor: pseudo-classe hover */
+
+.iconSegPart:hover {
+  color: #ff4c68;
+}
+
+#depoimentos {
+  text-align: center;
+  background-color: #ef8172;
+  color: #fff;
+}
+
+.carousel-item{
+      padding: 7% 15%;
+}
+
+
+
+
+.depo-Image {
+  width: 10%;
+  /* Deixar a imagem redonda */
+  border-radius: 100%;
+  margin: 20px;
+  text-align: center;
+}
+
+#press {
+  background-color: #ef8172;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+   width: 15%;
+   margin: 20px 30px 50px;
+}
+
+/* Price Section */
+
+ #pricing {
+   padding: 100px;
+   text-align: center;
+ }
+
+.pricing-column {
+  padding:3% 2%;
+}
+
+
+/* Media Querry: alterações de viewport para celular tablt e mobile
+max-width: a partir de detemrinada largura, mudar a imagem titulo
+para alinhado e desfazer a rotação
+alinhamento do texto centrlaizado em visualizações menores */
+@media (max-width: 1028px) {
+
+#title {
+  text-align: center;
+}
+
+   .imagemTitulo {
+     position: static;
+     transform:rotate(0);
+   }
+}
+
+
+
+
+
+
+
+
+
+ .espaçosubtitulocard {
+   padding-bottom: 50px;
+ }
+
+/* cta section */
+
+ #cta {
+   background-color: #ff4c68;
+   color: #fff;
+   text-align: center;
+   padding: 7% 15%;
+ }
+ .tituloFinal {
+   font-family: 'MontSerrat', sans-serif;
+   font-weight: bold;
+   font-size: 3.5rem;
+   line-height: 1.5;
+ }
+
+ /* footer section */
+
+#footer {
+  padding: 7% 15%;
+  text-align:center;
+
+}
+
+.icone-redes {
+  margin: 20px 10px;
+
+}
+
+.ultimo {
+  color: #fff;
+}
